@@ -1,17 +1,16 @@
 .travelItem {
-    text-align: center;
-    color: #343A40;
-    background-color: #FFFFFF;
-    min-height: 100vh;
+    text-align: left;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     font-size: calc(10px + 2vmin);
+    padding: 50px;
 }
 
 .travelItem__header {
     display: flex;
-    justify-self: space-around;
+    align-self: space-around;
     font-size: small;
 }
