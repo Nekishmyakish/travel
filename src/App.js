@@ -1,23 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import TravelItem from "./components/travelItem";
+import React from "react";
+import TravelItem from "./components/travelItem/travelItem";
+import "./components/travelItem/travelItem.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <TravelItem/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="travelItem">
+      <TravelItem />
     </div>
   );
 }
