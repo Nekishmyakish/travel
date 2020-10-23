@@ -50,6 +50,11 @@
     margin: 0;
 }
 
+.travelItem__buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* .travelItem__netflix-pic {
     padding-left: 120px;
 } */
