@@ -3,6 +3,32 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import firebase from "firebase";
+
+firebase.initializeApp({
+  apiKey: "AIzaSyAMpvkIR-t2omJ4Ql3NnrLc8CU62OW1qaQ",
+  authDomain: "travel-40b55.firebaseapp.com",
+  databaseURL: "https://travel-40b55.firebaseio.com",
+  projectId: "travel-40b55",
+  storageBucket: "travel-40b55.appspot.com",
+  messagingSenderId: "516380663382",
+  appId: "1:516380663382:web:24f9799e92852e68db25f7",
+  measurementId: "G-QMTLJ0WD4R"
+});
+
+firebase
+        .auth()
+        .createUserWithEmailAndPassword("garret613@gmail.com", "qwerty123!")
+        .then((data) => {
+            return data.user.getIdToken();
+        })
+        .then((token) => {
+            console.log(token);
+
+        })
+        .catch((error) => {
+            console.error(error);})
+            
 
 ReactDOM.render(
   <React.StrictMode>

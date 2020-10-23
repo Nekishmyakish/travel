@@ -1,0 +1,63 @@
+.travelItem {
+    text-align: left;
+    display: flex;
+    align-items: flex-start;
+    font-size: calc(10px + 2vmin);
+    padding: 50px;
+}
+
+.travelItem__pics {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+    margin-right: 30px;
+}
+
+.travelItem__header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.travelItem__header_text {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.travelItem__header_text_netflix-title {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 25px;
+    font-size: medium;
+}
+
+.travelItem__header_text_netflix-title_netflix {
+    font-weight: bold;
+}
+
+.travelItem__header_text_netflix-title_blue-mark {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.travelItem__header_text_netflix-title_netflix-dog {
+    color: #868E96;
+    font-weight: bold;
+}
+
+.travelItem__header_text_sunday {
+    margin: 0;
+}
+
+.travelItem__buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.travelItem__netflix-pic {
+    padding-top: 15px;
+}

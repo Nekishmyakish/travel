@@ -1,0 +1,26 @@
+[debug] [2020-10-21T17:01:41.051Z] ----------------------------------------------------------------------
+[debug] [2020-10-21T17:01:41.054Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\НикМякПук\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login:ci --interactive
+[debug] [2020-10-21T17:01:41.054Z] CLI Version:   8.13.0
+[debug] [2020-10-21T17:01:41.054Z] Platform:      win32
+[debug] [2020-10-21T17:01:41.054Z] Node Version:  v12.18.3
+[debug] [2020-10-21T17:01:41.055Z] Time:          Wed Oct 21 2020 20:01:41 GMT+0300 (GMT+03:00)
+[debug] [2020-10-21T17:01:41.056Z] ----------------------------------------------------------------------
+[debug] [2020-10-21T17:01:41.056Z] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=612041613&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-10-21T17:06:55.927Z] ----------------------------------------------------------------------
+[debug] [2020-10-21T17:06:55.930Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\НикМякПук\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login:ci --interactive
+[debug] [2020-10-21T17:06:55.931Z] CLI Version:   8.13.0
+[debug] [2020-10-21T17:06:55.931Z] Platform:      win32
+[debug] [2020-10-21T17:06:55.931Z] Node Version:  v12.18.3
+[debug] [2020-10-21T17:06:55.932Z] Time:          Wed Oct 21 2020 20:06:55 GMT+0300 (GMT+03:00)
+[debug] [2020-10-21T17:06:55.932Z] ----------------------------------------------------------------------
+[debug] [2020-10-21T17:06:55.932Z] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=944523325&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
