@@ -15,7 +15,7 @@ export default function Login() {
       <p>Password</p>
       <input type="text"></input>
       <button>Log In</button>
-      <a href="#">Forgot password?</a>
+      <a href="#">Forgot password?</a> 
     </div>
   );
 }
