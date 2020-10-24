@@ -2,4 +2,57 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 50px;
+}
+
+.login__header {
+    color: #03A9F4;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.text {
+    color: #03A9F4;
+    font-weight: bold;
+    font-size: small;
+    width: 300px;
+    text-align: left;
+}
+
+.login__id {
+    font-size: bold;
+    border: 3px solid #03A9F4;
+    border-radius: 35px;
+    outline: none;
+    height: 40px;
+    width: 300px;
+}
+
+.login__password {
+    border: 3px solid #CED4DA;
+    border-radius: 35px;
+    outline: none;
+    height: 40px;
+    width: 300px;
+}
+
+.login__button {
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: #03A9F4;
+    border-radius: 35px;
+    outline: none;
+    height: 50px;
+    width: 310px;
+    margin-top: 25px;
+}
+
+.login__pas-recovery {
+    color: #03A9F4;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: small;
+    margin-top: 30px;
 }

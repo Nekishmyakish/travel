@@ -6,7 +6,7 @@
     padding: 50px;
 }
 
-.travelItem__pics {
+.travelItem__left-block {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,10 +15,31 @@
     margin-right: 30px;
 }
 
-.travelItem__header {
+.travelItem__left-block_avatar {
+    position: relative;
+    top: -25px;
+}
+
+.travelItem__left-block_repost-arrows {
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.travelItem__left-block_repost-arrows:hover {
+    outline: none;
+    background-color: red;
+}
+
+.travelItem__container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.travelItem__header {
+    display: flex;
+    flex-direction: column;
 }
 
 .travelItem__header_text {
@@ -27,7 +48,7 @@
     margin: 0;
 }
 
-.travelItem__header_text_netflix-title {
+.travelItem__header_text_status {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -35,29 +56,44 @@
     font-size: medium;
 }
 
-.travelItem__header_text_netflix-title_netflix {
+.travelItem__header_text_status_userName {
     font-weight: bold;
 }
 
-.travelItem__header_text_netflix-title_blue-mark {
+.travelItem__header_text_status_check-mark {
     margin-left: 5px;
     margin-right: 5px;
 }
 
-.travelItem__header_text_netflix-title_netflix-dog {
+.travelItem__header_text_repostDate {
     color: #868E96;
     font-weight: bold;
 }
 
-.travelItem__header_text_sunday {
+.travelItem__header_text_content {
     margin: 0;
+}
+
+.travelItem__header_content-pic {
+    padding-top: 15px;
 }
 
 .travelItem__buttons {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    width: 400px;
+    padding-top: 20px;
 }
 
-.travelItem__netflix-pic {
-    padding-top: 15px;
+.travelItem__buttons-like, .travelItem__buttons-repost, .travelItem__buttons-share-pic {
+    border: none;
+    outline: none;
+    background-color: white;
+    color: #868E96;
+    font-weight: bold;
+}
+
+.travelItem__buttons-like:hover, .travelItem__buttons-repost:hover, .travelItem__buttons-share-pic:hover {
+    outline: none;
+    background-color: red;
 }
