@@ -1,8 +1,31 @@
 import React from "react";
 import "./login.css";
+import firebase from "firebase";
 export default function Login() {
+  const [email, setEmail] = React.useState("");
+  const [password, setPassword] = React.useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    firebase
+      .auth()
+      .createUserWithEmailAndPassword(email, password)
+      .then((data) => {
+        return data.user.getIdToken();
+      })
+      .then((token) => {
+        console.log(token);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
+    alert(password);
+    setEmail("");
+    setPassword("");
+  };
+
   return (
-    <div className="login__container">
+    <form className="login__container" onSubmit={handleSubmit}>
       <img
         src="https://firebasestorage.googleapis.com/v0/b/travel-40b55.appspot.com/o/twitter-pic.svg?alt=media&token=f30ab919-b721-4603-bb15-83a024cda73a"
         alt="twitter-pic"
@@ -14,15 +37,21 @@ export default function Login() {
       <p className="text">Phone, email or username</p>
       <input
         type="text"
-        value="example@gmail.com"
+        value={email}
         className="login__id"
+        onChange={(e) => setEmail(e.target.value)}
       ></input>
       <p className="text">Password</p>
-      <input type="text" className="login__password"></input>
-      <button className="login__button">Log In</button>
+      <input
+        type="password"
+        value={password}
+        className="login__password"
+        onChange={(e) => setPassword(e.target.value)}
+      ></input>
+      <input type="submit" className="login__button"></input>
       <a href="URL" className="login__pas-recovery">
         Forgot password?
       </a>
-    </div>
+    </form>
   );
 }
