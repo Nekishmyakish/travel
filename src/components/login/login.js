@@ -4,18 +4,25 @@ export default function Login() {
   return (
     <div className="login__container">
       <img
-        src="https://firebasestorage.googleapis.com/v0/b/travel-40b55.appspot.com/o/twitter-pic.png?alt=media&token=f9265dbb-75bc-4c84-b010-d449a4a811ae"
+        src="https://firebasestorage.googleapis.com/v0/b/travel-40b55.appspot.com/o/twitter-pic.svg?alt=media&token=f30ab919-b721-4603-bb15-83a024cda73a"
         alt="twitter-pic"
-        height="30"
-        width="30"
+        height="40"
+        width="40"
+        className="login__twitter-pic"
       ></img>
-      <h4>Log In to Twitter</h4>
-      <p>Phone, email or username</p>
-      <input type="text"></input>
-      <p>Password</p>
-      <input type="text"></input>
-      <button>Log In</button>
-      <a href="#">Forgot password?</a> 
+      <h2 className="login__header">Log in to Twitter</h2>
+      <p className="text">Phone, email or username</p>
+      <input
+        type="text"
+        value="example@gmail.com"
+        className="login__id"
+      ></input>
+      <p className="text">Password</p>
+      <input type="text" className="login__password"></input>
+      <button className="login__button">Log In</button>
+      <a href="URL" className="login__pas-recovery">
+        Forgot password?
+      </a>
     </div>
   );
 }
