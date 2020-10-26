@@ -4,11 +4,20 @@ import firebase from "firebase";
 export default function Login() {
   const [email, setEmail] = React.useState("");
   const [password, setPassword] = React.useState("");
-
   const handleSubmit = (e) => {
     e.preventDefault();
     firebase
       .auth()
+      // .sendAuthEmail(email)
+      // {
+      //   var actionCodeSettings = {
+      //     // URL you want to redirect back to. The domain (www.example.com) for this
+      //     // URL must be whitelisted in the Firebase Console.
+      //     url: 'http://localhost:3000',
+      //     // This must be true.
+      //     handleCodeInApp: true,
+      //     dynamicLinkDomain: 'example.page.link'
+      // };
       .createUserWithEmailAndPassword(email, password)
       .then((data) => {
         return data.user.getIdToken();

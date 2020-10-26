@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/header/header";
 import Login from "./components/login/login";
+import ForgotPassword from "./components/forgotPassword/forgotPassword";
 import Profile from "./components/profile/profile";
 import Feed from "./components/feed/feed";
 import TravelItem from "./components/travelItem/travelItem";
@@ -14,6 +15,7 @@ function App() {
         <Link to="/about">About</Link>
         <Route exact path="/about" component={Header} />
         <Route exact path="/about" component={Login} />
+        <Route exact path="/about" component={ForgotPassword} />
         <Route exact path="/about" component={Profile} />
         <Route exact path="/about" component={Feed} />
         <Route exact path="/" component={TravelItem} />

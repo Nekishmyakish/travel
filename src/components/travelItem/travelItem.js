@@ -4,7 +4,6 @@ import "./travelItem.css";
 export default function TravelItem(props) {
   const [like, setLike] = React.useState(0);
   const [comment, setComment] = React.useState(0);
-  const [repost, setRepost] = React.useState(0);
   return (
     <div>
       <div className="travelItem">
@@ -16,16 +15,6 @@ export default function TravelItem(props) {
             width="85"
             className="travelItem__left-block_avatar"
           ></img>
-          <div>
-            <button className="travelItem__left-block_repost-arrows">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/travel-40b55.appspot.com/o/repost-arrows-pic.svg?alt=media&token=d32916e2-e622-4a94-8381-3f326a4ca78d"
-                alt="repost-arrows"
-                height="25"
-                width="35"
-              ></img>
-            </button>
-          </div>
         </div>
         <div className="travelItem__container">
           <div className="travelItem__header">
@@ -61,20 +50,13 @@ export default function TravelItem(props) {
               className="travelItem__buttons-comment"
               onClick={() => setComment((prevComment) => prevComment + 1)}
             >
-              Comment
-              {comment}
-            </button>
-            <button
-              className="travelItem__buttons-repost"
-              onClick={() => setRepost((prevRepost) => prevRepost + 1)}
-            >
               <img
-                src="https://firebasestorage.googleapis.com/v0/b/travel-40b55.appspot.com/o/repost-gray-pic.svg?alt=media&token=e6a6c2b6-a1a7-4ea5-92ea-13e415d57bb8"
-                alt="repost-gray-pic"
-                height="30"
-                width="30"
+                src="https://firebasestorage.googleapis.com/v0/b/travel-40b55.appspot.com/o/comment-pic.svg?alt=media&token=4e8f129e-b2a7-45ad-ab26-acafdfecc760"
+                alt="comment-pic"
+                height="25"
+                width="25"
               ></img>
-              {repost}
+              {comment}
             </button>
             <button
               type="submit"
@@ -88,12 +70,6 @@ export default function TravelItem(props) {
                 width="25"
               ></img>
               {like}
-            </button>
-            <button className="travelItem__buttons-share-pic">
-              <img
-                src="https://firebasestorage.googleapis.com/v0/b/travel-40b55.appspot.com/o/share-pic.svg?alt=media&token=b8af0ef7-64eb-4154-bb37-6edfee30140d"
-                alt="share-pic"
-              ></img>
             </button>
           </div>
         </div>

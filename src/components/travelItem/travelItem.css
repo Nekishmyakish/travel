@@ -20,17 +20,6 @@
     top: -25px;
 }
 
-.travelItem__left-block_repost-arrows {
-    border: none;
-    outline: none;
-    background-color: white;
-}
-
-.travelItem__left-block_repost-arrows:hover {
-    outline: none;
-    background-color: red;
-}
-
 .travelItem__container {
     display: flex;
     flex-direction: column;
@@ -85,7 +74,7 @@
     padding-top: 20px;
 }
 
-.travelItem__buttons-like, .travelItem__buttons-repost, .travelItem__buttons-share-pic {
+.travelItem__buttons-like, .travelItem__buttons-comment {
     border: none;
     outline: none;
     background-color: white;
@@ -93,7 +82,7 @@
     font-weight: bold;
 }
 
-.travelItem__buttons-like:hover, .travelItem__buttons-repost:hover, .travelItem__buttons-share-pic:hover {
+.travelItem__buttons-like:hover, .travelItem__buttons-comment:hover {
     outline: none;
     background-color: red;
 }
